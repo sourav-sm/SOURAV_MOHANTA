@@ -26,7 +26,7 @@ const Home=()=>{
             duration={1.5}
             delay={1}
             start={{
-              transform:"translateY(550ox)",
+              transform:"translateY(550px)",
             }}
             end={{
               transform:"TranslateX(0px)",
