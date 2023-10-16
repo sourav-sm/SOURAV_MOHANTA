@@ -1,19 +1,19 @@
 .skills{
-    &_content-wrapper{
+    &__content-wrapper{
         display: flex;
         padding: 20px;
         gap: 20px;
 
-        &_inner-content{
+        &__inner-content{
             flex: 1;
             display: flex;
             flex-direction:column;
             align-items: center;
 
-            &_categoty-text{
+            &__category-text{
                 display: inline-block;
                 color: var(--yellow-theme-main-color);
-                font-size: 22px;
+                font-size: 27px;
                 font-weight: 700;
                 line-height: 1rem;
                 letter-spacing: 0.5px;
@@ -23,7 +23,7 @@
                 border-bottom: 2px solid var(--yellow-theme-main-color);
             }
 
-            &_categoty-text::before,&_categoty-text::after{
+            &__category-text::before,&_category-text::after{
                 position: absolute;
                 content: '';
                 width: 2px;
@@ -31,24 +31,24 @@
                 background-color: var(--yellow-theme-main-color);
                 bottom: -1px;
             }
-            &_categoty-text::before{
+            &__category-text::before{
                 left: 0;
             }
-            &_categoty-text::after{
+            &__category-text::after{
                 right: 0;
             }
-            &_progressbar-container{
+            &__progressbar-container{
                 width: 100%;
             }
             .progressbar-wrapper{
                 padding: 50px 0px 0px 0px;
 
                 p{
-                    font-size: 1.6rem;
+                    font-size: 3.6rem;
                     margin: 0 0 10px;
                     font-weight: 500;
                     text-transform: uppercase;
-                    color: var(--yelow-theme-sub-text-color);
+                    color: var(--yellow-theme-sub-text-color);
                 }
             }
         }
@@ -61,7 +61,7 @@
             flex-direction: column;
         }
     }
-    .skills_content-wrapper_inner-content_progressbar-container{
+    .skills__content-wrapper__inner-content__progressbar-container{
         margin-bottom: 20px;
     }
 }

@@ -23,15 +23,15 @@
         background-color: var(--yellow-theme-main-color);
         bottom: -1px;
     }
-    &_header-text::before{
+    &__header-text::before{
         left: 0;
     }
-    &_header-text::after{
+    &__header-text::after{
         right: 0;
     }
-    &_form{
+    &__form{
         margin-top: 30px;
-        &_controlswrapperr{
+        &__controlswrapperr{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 40px;
@@ -106,7 +106,7 @@
     .contact_content_form{
         text-align: center;
 
-        &_controlsrapper{
+        &__+controlsrapper{
             grid-template-columns: repeat(1,1fr);
         }
     }

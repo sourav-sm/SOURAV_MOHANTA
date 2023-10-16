@@ -1,13 +1,15 @@
 import React from "react";
 import {BsInfoCircleFill} from 'react-icons/bs';
-import PageHeaderContetent from "../../compnents/pageHeaderContent";
+import PageHeaderContent from "../../compnents/pageHeaderContent";
 import { Animate } from "react-simple-animate";
-import './styles.scss'
+import "./styles.scss";
+
+
 
 const Contacts=()=>{
     return(
         <section id="contact" className="contact">
-           <PageHeaderContetent
+           <PageHeaderContent
            headerText="contact Me"
            icon={<BsInfoCircleFill size={40}/>}/>
            <div className="contact_content">
@@ -36,7 +38,7 @@ const Contacts=()=>{
             }}
             >
               <div className="contact_content_form">
-              <div className="contact_content_form_controlswrapper">
+              <div className="contact__content__form__controlswrapper">
                 <div>
                   <input name="name" className="inputName" type={'text'} />
                   <label htmlFor="name" className="nameLabel">Name</label>

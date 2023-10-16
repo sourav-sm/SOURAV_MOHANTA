@@ -14,38 +14,38 @@ export const skillsData=[
                 skillName:"JAVASCRIPT",
                 percentage:"80",
             },
+            {
+                skillName:"RRACTJS",
+                percentage:"80",
+            },
         ],
     },
     {
         label:"BACK END",
         data:[
             {
-                skillName:"HTML",
+                skillName:"NODEJS",
                 percentage:"90",
             },
             {
-                skillName:"HTML",
+                skillName:"EXPRESSJS",
                 percentage:"90",
             },
             {
-                skillName:"HTML",
+                skillName:"API",
                 percentage:"90",
             },
         ],
     },
     {
-        label:"FRONT END",
+        label:"DATA-BASE",
         data:[
             {
-                skillName:"HTML",
+                skillName:"MYSQL",
                 percentage:"90",
             },
             {
-                skillName:"HTML",
-                percentage:"90",
-            },
-            {
-                skillName:"HTML",
+                skillName:"MONGODB",
                 percentage:"90",
             },
         ],
