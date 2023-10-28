@@ -30,7 +30,7 @@ const Resume=()=>{
                   color : 'var(--yellow-theme-sub-text-color)',
                   border : '1.5px solid var(--yellow-theme-main-color)'
                 }}
-                date="2020 - Present"
+                date="May,2023--July,2023"
                 icon={<MdWork/>}
                 iconStyle={{
                   background : '#181818',
@@ -68,7 +68,7 @@ const Resume=()=>{
                   color : 'var(--yellow-theme-sub-text-color)',
                   border : '1.5px solid var(--yellow-theme-main-color)'
                 }}
-                date="2020 - Present"
+                //  date={item.date}
                 icon={<MdWork/>}
                 iconStyle={{
                   background : '#181818',
@@ -84,8 +84,14 @@ const Resume=()=>{
                   <h4>
                     {item.subTitle}
                   </h4>
+
                 </div>
-                <p className="vertical-timeline-element-title-wrapper-description">{item.description} </p>
+                <p className="vertical-timeline-element-title-wrapper-description">
+                  {item.description} 
+                </p>
+                <p className="vertical-timeline-element-title-wrapper-description">
+                  {item.date} 
+                </p>
 
               </VerticalTimelineElement>
             ))}

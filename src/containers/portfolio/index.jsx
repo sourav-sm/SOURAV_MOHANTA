@@ -13,22 +13,26 @@ const portfolioData=[
   {
     id:2,
     name:"Travel",
-    image:image3
+    image:image3,
+    link:"https://github.com/sourav-sm/Adventura",
   },
   {
     id:3,
     name:"Weather",
-    image:image5
+    image:image5,
+    link:"https://github.com/sourav-sm/Add_to_Cart",
   },
   {
     id:2,
     name:"Shopping cart design",
-    image:image2
+    image:image2,
+    link:"https://github.com/sourav-sm/Add_to_Cart",
   },
   {
     id:2,
     name:"Todo App",
-    image:image1
+    image:image1,
+    link:"https://github.com/sourav-sm/DAY_PLANER",
   },
   // {
   //   id:2,
@@ -101,7 +105,7 @@ const Portfolio=()=>{
               onMouseLeave={() => handleHover(null)}
             >
               <div className="portfolio__content__cards__item__img-wrapper">
-                <a>
+                <a href={item.link} target="_blank">  rel="noopener noreferrer">
                   <img alt="dummy data" src={item.image} />
                 </a>
               </div>
@@ -109,7 +113,9 @@ const Portfolio=()=>{
                 {index === hoveredValue && (
                   <div>
                     <p>{item.name}</p>
-                    <button>Visit</button>
+                    <a href={item.link} target="_blank" rel="noopener noreferrer">
+                      <button>Visit</button>
+                     </a>
                   </div>
                 )}
               </div>
