@@ -59,6 +59,11 @@
 
         a{
             color:var(--yellow-theme-main-color);
+
+            &:hover{
+                background: var(--yellow-theme-main-color);
+                color: #000000;
+            }
         }
     }
 }
