@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction:column;
 
     &_text-wrapper{
         display: flex;
@@ -25,11 +26,12 @@
     &_contact-me{
         display: flex;
          justify-content: center; 
-         margin-top: 15px;  
-    
+         margin-top: 15px; 
+         flex-direction: row; 
+         gap: 20px;
         button{
             cursor: pointer;
-            padding: 10px 70px;
+            padding: 10px 20px;
             font-size: 2rem;
             background-color: transparent;
             color: var(--yellow-theme-main-color);
@@ -42,6 +44,23 @@
             }
         }
         }
+    // &_download-resume{
+    //     display: flex;
+    //      justify-content: center; 
+    //      margin-top: 15px; 
+    // }
+    &_social-media-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 2rem;
+        margin-top: 15px;
+
+        a{
+            color:var(--yellow-theme-main-color);
+        }
+    }
 }
 
 @media only screen and (max-width : 550px){

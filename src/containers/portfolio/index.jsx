@@ -9,6 +9,7 @@ import image5 from '../images/image5.png'
 import {useState} from "react"
 import  "./styles.scss"
 
+
 const portfolioData=[
   {
     id:2,
