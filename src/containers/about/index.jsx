@@ -13,7 +13,7 @@ const personalDetails = [
   },
   {
     label: "Age",
-    value: "20",
+    value: "21",
   },
   {
     label: "Address",
@@ -21,7 +21,7 @@ const personalDetails = [
   },
   {
     label: "Email",
-    value: "souravmohanta4428@gmail.com",
+    value: "developersourav135@gmail.com",
   },
   {
     label: "Contact",

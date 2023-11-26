@@ -21,7 +21,7 @@ const portfolioData=[
     id:3,
     name:"Weather",
     image:image5,
-    link:"https://github.com/sourav-sm/Add_to_Cart",
+    link:"https://github.com/sourav-sm/ForecastGuru.",
   },
   {
     id:2,
@@ -42,20 +42,20 @@ const portfolioData=[
   // },
 ]
 
-const filterData = [
-  {
-    filterData:1,
-    label:'All'
-  },
-  {
-    filterData:2,
-    label:'Development'
-  },
-  {
-    filterData:3,
-    label:'Design'
-  }
-]
+// const filterData = [
+//   {
+//     filterData:1,
+//     label:'All'
+//   },
+//   {
+//     filterData:2,
+//     label:'Development'
+//   },
+//   {
+//     filterData:3,
+//     label:'Design'
+//   }
+// ]
 const Portfolio=()=>{
   const [filteredvalue, setFilteredValue] = useState(1);
   const [hoveredValue, setHoveredValue] = useState(null);
@@ -86,17 +86,17 @@ const Portfolio=()=>{
         icon={<BsInfoCircleFill size={40} />}
       />
       <div className="portfolio__content">
-        <ul className="portfolio__content__filter">
-          {filterData.map((item) => (
-            <li
-              className={item.filterId === filteredvalue ? "active" : ""}
-              onClick={() => handleFilter(item.filterId)}
-              key={item.filterId}
-            >
-              {item.label}
-            </li>
-          ))}
-        </ul>
+        {/* <ul className="portfolio__content__filter">
+          {/* {filterData.map((item) => (
+            // <li
+            //   className={item.filterId === filteredvalue ? "active" : ""}
+            //   onClick={() => handleFilter(item.filterId)}
+            //   key={item.filterId}
+            // >
+            //   {item.label}
+            // </li>
+          ))} */}
+        {/* </ul> */} 
         <div className="portfolio__content__cards">
           {filteredItems.map((item, index) => (
             <div
@@ -106,7 +106,7 @@ const Portfolio=()=>{
               onMouseLeave={() => handleHover(null)}
             >
               <div className="portfolio__content__cards__item__img-wrapper">
-                <a href={item.link} target="_blank">  rel="noopener noreferrer">
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
                   <img alt="dummy data" src={item.image} />
                 </a>
               </div>
