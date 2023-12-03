@@ -84,27 +84,42 @@
                         left: 0px;
                     }
 
+                }
+                    .button{
+                        cursor: pointer;
+                        padding: 10px 70px;
+                        font-size: 2rem;
+                        background: transparent;
+                        color: var(--yellow-theme-main-color);
+                        border: 1.5px solid var(--yellow-theme-main-color);
+                        border-radius: 4px;
+                        font-weight: 500;
+            
+                        &:hover{
+                            color: #000;
+                            background: var(--yellow-theme-main-color);
+                        }
+                    }
 
                    
-                  }
             }
         }
 
-        button{
-            cursor: pointer;
-            padding: 10px 70px;
-            font-size: 2rem;
-            background: transparent;
-            color: var(--yellow-theme-main-color);
-            border: 1.5px solid var(--yellow-theme-main-color);
-            border-radius: 4px;
-            font-weight: 500;
+        // &_button{
+        //     cursor: pointer;
+        //     padding: 10px 70px;
+        //     font-size: 2rem;
+        //     background: transparent;
+        //     color: var(--yellow-theme-main-color);
+        //     border: 1.5px solid var(--yellow-theme-main-color);
+        //     border-radius: 4px;
+        //     font-weight: 500;
 
-            &:hover{
-                color: #000;
-                background: var(--yellow-theme-main-color);
-            }
-        }
+        //     &:hover{
+        //         color: #000;
+        //         background: var(--yellow-theme-main-color);
+        //     }
+        // }
     }
 }
 

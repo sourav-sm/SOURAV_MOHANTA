@@ -366,8 +366,11 @@ const Contact = () => {
                 <label className="descriptionLabel">Message</label>
                 <textarea required name="description" rows="5" className="inputDescription" />
               </div>
+              <div>
+              <input type="submit" className="button" value="Send" />
+              </div>
             </div>
-            <input type="submit" value="Send" />
+            {/* <input type="submit" className="button" value="Send" /> */}
           </StyledContactForm>
         </Animate>
       </div>

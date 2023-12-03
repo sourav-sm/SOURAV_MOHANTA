@@ -62,24 +62,25 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        position: absolute;
-        top: 80px;
+        position:absolute;
+        top: 800px;
         left: -110%;
         opacity: 1;
         transition: all 0.5s ease;
         
-        
 
         &.active{
-            background: #151414;
+            background: #131010;
             left: 0px;
             opacity: 1;
         }
 
+
         &_item{
             border-bottom: 1px solid #000000;
             margin: 0px;
-            padding: 20px 0px;
+            padding: 20px;
+            cursor: pointer;
         }
     }
 
