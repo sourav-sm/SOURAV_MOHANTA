@@ -6,6 +6,7 @@
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
+    z-index: 1000;
 
     &_container{
       display: flex;
@@ -63,7 +64,7 @@
         justify-content: center;
         width: 100%;
         position:absolute;
-        top: 800px;
+        top: 80px;
         left: -110%;
         opacity: 1;
         transition: all 0.5s ease;
