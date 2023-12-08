@@ -6,7 +6,8 @@ import { HiTranslate } from "react-icons/hi";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
-const pdf_file_url='http://localhost:3000/RESUME_SOURAV.pdf'
+// const pdf_file_url='http://localhost:3000/RESUME_SOURAV.pdf'//for local file
+const pdf_file_url='https://drive.google.com/file/d/1Am5o_29Bq8lrqyZPjkI_ge9rpavQ5414/view'//for hosted view 
 const Home=()=>{
    const navigate = useNavigate();
    console.log(navigate);
