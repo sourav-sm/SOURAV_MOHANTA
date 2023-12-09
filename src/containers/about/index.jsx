@@ -29,7 +29,7 @@ const personalDetails = [
   }
 ];
 
-const jobsummary='I am Currently 3rd year student of NIT Durgapur,'
+const jobsummary='Hey this is Sourav, pre final year student of NIT Durgapur, a Coder, Developer , Tech Guy, open source enthusiast . open for new opportunity.'
 
 
 const About=()=>{

@@ -303,23 +303,25 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_zp40cj8",
-        "template_120fukb",
+        'service_zp40cj8',
+        'template_120fukb',
         form.current,
-        "mnkfS_dPjkUeXtXLX"
+        // 'mnkfS_dPjkUeXtXLX'
+        'r865tUufINr4ZqbtP'
       )
       .then(
         (result) => {
           console.log(result.text);
-          console.log("message sent");
+          alert("message sent");//update
           e.target.reset();
           // You can add a toast or alert here to notify the user
         },
         (error) => {
-          console.log(error.text);
+          alert(error.text);//update
         }
       );
   };
+
 
   return (
     <section id="contact" className="contact">
@@ -364,7 +366,7 @@ const Contact = () => {
               </div>
               <div>
                 <label className="descriptionLabel">Message</label>
-                <textarea required name="description" rows="5" className="inputDescription" />
+                <textarea required type="text" name="message" rows="5" className="inputDescription" />
               </div>
               <div>
               <input type="submit" className="button" value="Send" />
