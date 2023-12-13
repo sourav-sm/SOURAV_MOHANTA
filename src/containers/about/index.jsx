@@ -29,7 +29,7 @@ const personalDetails = [
   }
 ];
 
-const jobsummary='Hey this is Sourav, pre final year student of NIT Durgapur, a Coder, Developer , Tech Guy, open source enthusiast . open for new opportunity.'
+const jobsummary='Hey this is Sourav, pre final year student of NIT Durgapur, a Coder, Developer , Tech Guy, open source enthusiast . open for new opportunity. For any colaboration or work feel free to connect with me.'
 
 
 const About=()=>{
