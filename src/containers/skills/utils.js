@@ -37,7 +37,7 @@ export const skillsData=[
         label:"BACK END",
         data:[
             {
-                skillName:<img height="70px" weight="90px" src="https://cdn-ak.f.st-hatena.com/images/fotolife/d/daihase/20190809/20190809120056.png"></img>,
+                skillName:<img height="69px" weight="90px" src="https://cdn-ak.f.st-hatena.com/images/fotolife/d/daihase/20190809/20190809120056.png"></img>,
                 percentage:"90",
             },
             {
