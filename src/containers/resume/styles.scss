@@ -89,6 +89,9 @@
 }
 
 @media only screen and (max-width : 768px){
+    .resume{
+        overflow: hidden;
+    }
     .timeline{
         flex-direction: coloumn;
         &__experience,&__education{

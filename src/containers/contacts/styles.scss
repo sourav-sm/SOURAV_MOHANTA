@@ -19,7 +19,7 @@
         &__header-text::after{
             position: absolute;
             content: "";
-            width: 2px;
+            width: 200px;
             height: 5px;
             background-color: var(--yellow-theme-main-color);
             bottom: -1px;
@@ -37,8 +37,10 @@
             &__controlswrapper{
                   display: grid;
                   grid-template-columns: repeat(2,1fr);
+                // flex-direction: column;
                   gap: 40px;
                   margin-bottom: 30px;
+                //   margin-right: -30px;
 
                   div{
                     position: relative;
@@ -125,9 +127,12 @@
 
 
 @media only screen and (max-width : 768px){
+    .contact{
+        overflow: hidden;
+    }
     .contact__content__form{
         text-align: center;
-
+        
         &__controlswrapper{
             grid-template-columns: repeat(1,1fr);
         }
