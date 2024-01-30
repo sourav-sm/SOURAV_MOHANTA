@@ -88,15 +88,27 @@
     }
 }
 
-@media only screen and (max-width : 768px){
-    .resume{
+//******for small screen like mobile*****
+@media only screen and (max-width: 768px) {
+    .resume {
         overflow: hidden;
     }
-    .timeline{
-        flex-direction: coloumn;
-        &__experience,&__education{
+
+    .timeline {
+        flex-direction: column;  /* Fix the typo here */
+
+        &__experience,
+        &__education {
             width: 100%;
             gap: 2rem;
+
+            .vertical-timeline-element-title-wrapper,
+            .vertical-timeline-element-title-wrapper-description {
+                white-space: normal; /* Reset white-space property */
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
     }
 }
+

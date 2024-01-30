@@ -99,6 +99,9 @@
 }
 
 @media only screen and (max-width:768px) {
+    .about{
+        overflow: hidden;
+    }
     .about_content{
         flex-direction: column;
     
