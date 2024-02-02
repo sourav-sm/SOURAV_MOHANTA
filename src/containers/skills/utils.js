@@ -3,7 +3,7 @@ export const skillsData=[
         label:"FRONT END",
         data:[
             {
-                skillName:<img width="70px" height="70px" src="https://www.devopsschool.com/blog/wp-content/uploads/2022/03/html.jpg"></img>,
+                skillName:<img width="170px" height="120px" src="https://www.devopsschool.com/blog/wp-content/uploads/2022/03/html.jpg"></img>,
                 percentage:"90",
             },
             {
@@ -37,7 +37,7 @@ export const skillsData=[
         label:"BACK END",
         data:[
             {
-                skillName:<img height="70px" width="90px" src="https://cdn-ak.f.st-hatena.com/images/fotolife/d/daihase/20190809/20190809120056.png"></img>,
+                skillName:<img height="110px" width="150px" src="https://cdn-ak.f.st-hatena.com/images/fotolife/d/daihase/20190809/20190809120056.png"></img>,
                 percentage:"90",
             },
             {
@@ -58,7 +58,7 @@ export const skillsData=[
         label:"DATA-BASE",
         data:[
             {
-                skillName:<img width="110px" height="70px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWkLkjk9xABLP_nxrCee_wTkTGUGOsme5GA&usqp=CAU"></img>,
+                skillName:<img width="130px" height="130px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWkLkjk9xABLP_nxrCee_wTkTGUGOsme5GA&usqp=CAU"></img>,
                 percentage:"90",
             },
             {
@@ -71,7 +71,7 @@ export const skillsData=[
         label:"OTHER",
         data:[
             {
-                skillName:<img height="70px" width="120px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkjUwNrwJAp2ADbMR2-p2exxZ30cukfrFarQ&usqp=CAU"></img>,
+                skillName:<img height="130px" width="120px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkjUwNrwJAp2ADbMR2-p2exxZ30cukfrFarQ&usqp=CAU"></img>,
                 percentage:"90",
             },
             {
