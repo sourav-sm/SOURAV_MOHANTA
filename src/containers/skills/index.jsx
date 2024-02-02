@@ -3,7 +3,7 @@ import {BsInfoCircleFill} from 'react-icons/bs';
 import PageHeaderContetent from "../../compnents/pageHeaderContent";
 import { skillsData } from "./utils";
 import { Animate, AnimateKeyframes } from "react-simple-animate";
-import {Line} from "rc-progress";
+// import {Line} from "rc-progress";
 import './styles.scss';
 
 const Skills=()=>{
@@ -42,14 +42,15 @@ const Skills=()=>{
                       iterationCount="1"
                       >
                         <div className="progressbar-wrapper" key={j}>
-                        <p>{skillItem.skillName}</p>
-                        <Line
+                        {/* <p>{skillItem.skillName}</p> */}
+                        <img src={skillItem.skillName}  />
+                        {/* <Line
                          percent={skillItem.percentage}
                          strokeWidth="2"
                          strokeColor="var(--yellow-theme-main-color)"
                          trailWidth="2"
                          strokeLinecap="square"
-                         />
+                         /> */}
                         </div>
                       </AnimateKeyframes>
                     ))
