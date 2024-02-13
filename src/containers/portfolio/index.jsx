@@ -3,8 +3,8 @@ import {BsInfoCircleFill} from 'react-icons/bs';
 import PageHeaderContetent from "../../compnents/pageHeaderContent";
 import image1 from '../images/image1.png'
 import image2 from '../images/image2.png'
-import image3 from '../images/image3.png'
-// import ImageFour from '../images/image4.png'
+import image3 from '../images/image_3.png'
+import image4 from '../images/image_4.png'
 import image5 from '../images/image5.png'
 import {useState} from "react"
 import  "./styles.scss"
@@ -12,9 +12,15 @@ import  "./styles.scss"
 
 const portfolioData=[
   {
+    id:1,
+    name:"Ecommerce",
+    image:image3,
+    link:"https://github.com/sourav-sm/FashionFrenzy",
+  },
+  {
     id:2,
     name:"Travel",
-    image:image3,
+    image:image4,
     link:"https://github.com/sourav-sm/Adventura",
   },
   {
@@ -24,22 +30,17 @@ const portfolioData=[
     link:"https://github.com/sourav-sm/ForecastGuru.",
   },
   {
-    id:2,
+    id:4,
     name:"Shopping cart design",
     image:image2,
     link:"https://github.com/sourav-sm/Add_to_Cart",
   },
   {
-    id:2,
+    id:5,
     name:"Todo App",
     image:image1,
     link:"https://github.com/sourav-sm/DAY_PLANER",
   },
-  // {
-  //   id:2,
-  //   name:"Shopping cart design",
-  //   image:ImageFive
-  // },
 ]
 
 // const filterData = [
