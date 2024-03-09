@@ -6,6 +6,7 @@ import image2 from '../images/image2.png'
 import image3 from '../images/image_3.png'
 import image4 from '../images/image_4.png'
 import image5 from '../images/image5.png'
+import image6 from '../images/image6.png'
 import {useState} from "react"
 import  "./styles.scss"
 
@@ -25,18 +26,24 @@ const portfolioData=[
   },
   {
     id:3,
+    name:"Koinx",
+    image:image6,
+    link:"https://github.com/sourav-sm/koinx_assignment",
+  },
+  {
+    id:4,
     name:"Weather",
     image:image5,
     link:"https://github.com/sourav-sm/ForecastGuru.",
   },
   {
-    id:4,
+    id:5,
     name:"Shopping cart design",
     image:image2,
     link:"https://github.com/sourav-sm/Add_to_Cart",
   },
   {
-    id:5,
+    id:6,
     name:"Todo App",
     image:image1,
     link:"https://github.com/sourav-sm/DAY_PLANER",
