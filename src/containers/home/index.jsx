@@ -32,7 +32,7 @@ const Home=()=>{
               <h1>
                 Hello, I'm Sourav
                 <br />
-                Front End Developer
+                Full-Stack Developer
               </h1>
             </div>
             <Animate
