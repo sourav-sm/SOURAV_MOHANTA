@@ -10,6 +10,10 @@ import Portfolio from "./containers/portfolio";
 import Contact from "./containers/contacts";
 import Navbar from "./compnents/navBar";
 import particles from "./utils.js/particles";
+//for analytics
+// import  AnalyticsProps  from "@vercel/analytics/*";
+import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
   const location =useLocation();
@@ -37,6 +41,8 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      {/* <AnalyticsProps/> */}
+      <Analytics/>
       </div>
     </div>
   );
