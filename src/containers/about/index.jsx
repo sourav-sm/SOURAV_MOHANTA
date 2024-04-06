@@ -3,8 +3,7 @@ import {BsInfoCircleFill} from 'react-icons/bs';
 import PageHeaderContetent from "../../compnents/pageHeaderContent";
 import { Animate } from "react-simple-animate";
 import './styles.scss';
-import {DiApple,DiAndroid} from "react-icons/di";
-import {FaDev,FaDatabase} from "react-icons/fa";
+import pic from "../../pic.png";
 
 const personalDetails = [
   {
@@ -29,7 +28,7 @@ const personalDetails = [
   }
 ];
 
-const jobsummary='Hey this is Sourav, pre final year student of NIT Durgapur, a Coder, Developer , Tech Guy, open source enthusiast . open for new opportunity. For any colaboration or work feel free to connect with me.'
+const jobsummary="I'm a pre-final-year undergraduate with a keen interest in programming and development. I'm highly passonate for open-source and previously served as an summer-research  Intern at NIT Durgapur, where we developed and maintain a website for a NGO. Driven by a passion for continuous learning and exploring diverse computer science domains, I'm always eager to embrace new opportunities and stay abreast of evolving technologies."
 
 
 const About=()=>{
@@ -79,32 +78,10 @@ const About=()=>{
           </Animate>
           </div>
           <div className="about_content_serviceWrapper">
-          <Animate
-            play
-            duration={1.5}
-            delay={1}
-            start={{
-              transform:"translateX(600px)",
-            }}
-            end={{
-              transform:"TranslateX(0px)",
-            }}
-            >
            <div className="about_content_serviceWrapper_innerContent">
-            <div>
-                <FaDev size={60} color="var(--yellow-theme-main-color)"/>
-              </div>
-              <div>
-                <DiAndroid size={60} color="var(--yellow-theme-main-color)"/>
-              </div>
-              <div>
-                <FaDatabase size={60} color="var(--yellow-theme-main-color)"/>
-              </div>
-              <div>
-                <DiApple size={60} color="var(--yellow-theme-main-color)"/>
-              </div>
+            {/* profile pic */}
+            <img src={pic} alt="" />
            </div>
-           </Animate>
           </div>
         </div>
       </section>
