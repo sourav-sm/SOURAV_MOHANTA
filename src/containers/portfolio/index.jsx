@@ -2,11 +2,11 @@ import React from "react";
 import {BsInfoCircleFill} from 'react-icons/bs';
 import PageHeaderContetent from "../../compnents/pageHeaderContent";
 import image1 from '../images/image1.png'
-import image2 from '../images/image2.png'
 import image3 from '../images/image_3.png'
 import image4 from '../images/image_4.png'
 import image5 from '../images/image5.png'
 import image6 from '../images/image6.png'
+import image7 from '../images/image7.png'
 import {useState} from "react"
 import  "./styles.scss"
 
@@ -14,33 +14,33 @@ import  "./styles.scss"
 const portfolioData=[
   {
     id:1,
+    name:"Todo App",
+    image:image7,
+    link:"https://github.com/sourav-sm/BlogSphere",
+  },
+  {
+    id:2,
     name:"Ecommerce",
     image:image3,
     link:"https://github.com/sourav-sm/FashionFrenzy",
   },
   {
-    id:2,
+    id:3,
     name:"Travel",
     image:image4,
     link:"https://github.com/sourav-sm/Adventura",
   },
   {
-    id:3,
+    id:4,
     name:"Koinx",
     image:image6,
     link:"https://github.com/sourav-sm/koinx_assignment",
   },
   {
-    id:4,
+    id:5,
     name:"Weather",
     image:image5,
     link:"https://github.com/sourav-sm/ForecastGuru.",
-  },
-  {
-    id:5,
-    name:"Shopping cart design",
-    image:image2,
-    link:"https://github.com/sourav-sm/Add_to_Cart",
   },
   {
     id:6,
