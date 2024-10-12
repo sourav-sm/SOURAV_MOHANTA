@@ -20,7 +20,7 @@ const personalDetails = [
   },
   {
     label: "Email",
-    value: "developersourav135@gmail.com",
+    value: "souravmohanta4428@gmail.com",
   },
   {
     label: "Contact",
@@ -28,7 +28,7 @@ const personalDetails = [
   }
 ];
 
-const jobsummary="I'm a pre-final-year undergraduate with a keen interest in programming and development. I'm highly passonate for open-source and previously served as an summer-research  Intern at NIT Durgapur, where we developed and maintain a website for a NGO. Driven by a passion for continuous learning and exploring diverse computer science domains, I'm always eager to embrace new opportunities and stay abreast of evolving technologies."
+const jobsummary="I'm a final-year undergraduate with a keen interest in programming and development. I'm highly passonate for open-source and previously served as an summer-research  Intern at NIT Durgapur, where we developed and maintain a website for a NGO. Driven by a passion for continuous learning and exploring diverse computer science domains, I'm always eager to embrace new opportunities and stay abreast of evolving technologies."
 
 
 const About=()=>{

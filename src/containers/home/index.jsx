@@ -3,11 +3,12 @@ import { useNavigate } from "react-router-dom";
 import {Animate} from 'react-simple-animate';
 import './styles.scss';
 import { HiTranslate } from "react-icons/hi";
+// import { Typed } from "react-typed";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 // const pdf_file_url='http://localhost:3000/RESUME_SOURAV.pdf'//for local file
-const pdf_file_url='https://drive.google.com/file/d/1cxU-q6QptGa8PvgVCul6zkfwDTlitzHq/view'//for hosted view 
+const pdf_file_url='https://drive.google.com/file/d/1goTODcmwKR_LncJwF-XRFY9fYfZ7n1pH/view?usp=sharing'//for hosted view 
 const Home=()=>{
    const navigate = useNavigate();
    console.log(navigate);
@@ -29,11 +30,24 @@ const Home=()=>{
     return(
         <section id="home" className="home">
             <div className="home_text-wrapper">
-              <h1>
-                Hello, I'm Sourav,a
-                <br />
-                Full-Stack Developer
-              </h1>
+                <h1 style={{marginLeft:'10px'}}>
+                  Hello, I'm Sourav
+                </h1>
+                  <br />
+                <h1>
+                   Full-Stack Developer
+                </h1>
+                {/* <Typed
+                    string={[
+                      'Full-stack Developer',
+                      'Student',
+                      'Tech Enthusiast',
+                      'Coder'
+                    ]}
+                    typeSpeed={40}
+                    backSpeed={50}
+                    loop
+                /> */}
             </div>
             <Animate
             play
