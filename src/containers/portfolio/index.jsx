@@ -14,7 +14,7 @@ import  "./styles.scss"
 const portfolioData=[
   {
     id:1,
-    name:"Todo App",
+    name:"Blogging App",
     image:image7,
     link:"https://github.com/sourav-sm/BlogSphere",
   },
