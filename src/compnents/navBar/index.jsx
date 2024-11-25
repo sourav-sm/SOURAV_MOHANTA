@@ -12,12 +12,12 @@ const Navbar = () => {
   };
 
   const links = [
-    { label: 'HOME', to: '/' },
-    { label: 'ABOUT ME', to: '/about' },
-    { label: 'SKILLS', to: '/skills' },
-    { label: 'RESUME', to: '/resume' },
-    { label: 'PORTFOLIO', to: '/portfolio' },
-    { label: 'CONTACT', to: '/contact' },
+    { label: 'Home', to: '/' },
+    { label: 'About Me', to: '/about' },
+    { label: 'Skills', to: '/skills' },
+    { label: 'Resume', to: '/resume' },
+    { label: 'Projects', to: '/portfolio' },
+    { label: 'Contact Me', to: '/contact' },
   ];
 
   return (
