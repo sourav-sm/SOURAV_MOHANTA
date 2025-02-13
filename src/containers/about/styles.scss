@@ -21,7 +21,7 @@
             }
 
             p{
-                color: var(--yellow-theme-main-color);
+                color: var(--yellow-theme-sub-text-color);
                 font-size: 2.2rem;
                 line-height: 1.65;
                 padding-bottom: 20px;
@@ -51,17 +51,31 @@
         }
 
         &_serviceWrapper{
-             display: flex;
-             justify-content: center;
-             align-items: center;
-
-            &_innerContent{
-                img{
-                    width: 450px;
-                    height: 450px;
-                    border-radius: 50px;
-                }
+            
+            //  justify-content: center;
+            //  align-items: center;
+            h2{
+                margin-bottom: 10px;
+                font-size: 3.5rem;
+                font-weight: 700;
+                color: var(--yellow-theme-main-color);
             }
+            p{
+                margin-bottom: 10px;
+                margin-left: 10px;
+                font-size: 2.5rem;
+                font-weight: 500;
+                color: var(--yellow-theme-sub-text-color);
+            }
+
+
+            // &_innerContent{
+            //     img{
+            //         width: 450px;
+            //         height: 450px;
+            //         border-radius: 50px;
+            //     }
+            // }
         }
     }
 }

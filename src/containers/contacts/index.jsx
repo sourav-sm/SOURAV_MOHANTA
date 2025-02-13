@@ -285,7 +285,7 @@
 
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { BsInfoCircleFill } from "react-icons/bs";
+import { BsAlignBottom, BsInfoCircleFill } from "react-icons/bs";
 import { Animate } from "react-simple-animate";
 import PageHeaderContetent from "../../compnents/pageHeaderContent";
 import styled from "styled-components";
@@ -325,10 +325,13 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
-      <PageHeaderContetent
-        headerText="My Contact"
-        icon={<BsInfoCircleFill size={40} />}
-      />
+      <div className="contact-header">
+         <PageHeaderContetent
+           id="header-text"
+           headerText="Have a Project on Your Mind 🤔"
+           icon={<BsInfoCircleFill size={30} />}
+         />
+      </div>
       <div className="contact__content">
         <Animate
           play
@@ -341,7 +344,9 @@ const Contact = () => {
             transform: "translateX(0px)",
           }}
         >
-          <h3 className="contact__content__header-text">Let's Connect</h3>
+          <h3 className="contact__content__header-text" style={{ marginBottom: "25px" }}>
+            Let's Connect
+          </h3>
         </Animate>
         <Animate
           play
