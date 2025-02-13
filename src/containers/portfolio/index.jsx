@@ -41,7 +41,7 @@ const portfolioData=[
     id:5,
     name:"Koinx",
     image:image6,
-    link:"https://github.com/sourav-sm/koinx_assignment",
+    link:"https://github.com/sourav-sm/koinx_frontend_assignment",
   },
   {
     id:6,
