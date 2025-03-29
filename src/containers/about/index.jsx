@@ -31,7 +31,7 @@ import { SiLeetcode } from "react-icons/si";
 //   }
 // ];
 
-const jobsummary="I'm Sourav, a final-year undergraduate with a keen interest in programming and development. I'm highly passonate for open-source and previously served as an summer-research  Intern at NIT Durgapur, where we developed and maintain a website for a NGO. Driven by a passion for continuous learning and exploring diverse computer science domains, I'm always eager to embrace new opportunities and stay abreast of evolving technologies."
+const jobsummary="I'm Sourav, a final-year undergraduate with a keen interest in programming and development. I'm highly passonate for open-source and previously worked as Frontend Developer Intern at Prodloop, also served as an summer-research  Intern at NIT Durgapur, where we developed and maintain a website for a NGO. Driven by a passion for continuous learning and exploring diverse computer science domains, I'm always eager to embrace new opportunities and stay abreast of evolving technologies."
 
 
 const About=()=>{
