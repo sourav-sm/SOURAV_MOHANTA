@@ -9,6 +9,7 @@ import image6 from '../images/image6.png'
 import image7 from '../images/image7.png'
 import image8 from '../images/image8.png'
 import image9 from '../images/image_9.png'
+import algopundit from '../images/algopundit.png'
 import {useState} from "react"
 import  "./styles.scss"
 
@@ -16,47 +17,52 @@ import  "./styles.scss"
 const portfolioData=[
   {
     id:1,
+    name:"AlgoPundit--Coding Platform",
+    image:algopundit,
+    link:"https://www.algopundit.com/",
+  },{
+    id:2,
     name:"ChaiCode Landing Page",
     image:image9,
     link:"https://chai-code-landing-page-ehcu.vercel.app/",
   },{
-    id:2,
+    id:3,
     name:"Expense Tracker",
     image:image8,
     link:"https://github.com/sourav-sm/BuddgetBuddy",
   },
   {
-    id:3,
+    id:4,
     name:"Blogging App",
     image:image7,
     link:"https://github.com/sourav-sm/BlogSphere",
   },
   {
-    id:4,
+    id:5,
     name:"Ecommerce",
     image:image3,
     link:"https://github.com/sourav-sm/FashionFrenzy",
   },
   {
-    id:5,
+    id:6,
     name:"Travel",
     image:image4,
     link:"https://github.com/sourav-sm/Adventura",
   },
   {
-    id:6,
+    id:7,
     name:"Koinx",
     image:image6,
     link:"https://github.com/sourav-sm/koinx_frontend_assignment",
   },
   {
-    id:7,
+    id:8,
     name:"Weather",
     image:image5,
     link:"https://github.com/sourav-sm/ForecastGuru.",
   },
   {
-    id:8,
+    id:9,
     name:"Todo App",
     image:image1,
     link:"https://github.com/sourav-sm/DAY_PLANER",

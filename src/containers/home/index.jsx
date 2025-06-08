@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 // const pdf_file_url='http://localhost:3000/RESUME_SOURAV.pdf'//for local file
-const pdf_file_url='https://drive.google.com/file/d/1zxSYLpUXHH0QgkZhQNtw7EaG1QvqaEGR/view'//for hosted view 
+const pdf_file_url='https://drive.google.com/file/d/1YsC9mmL9hz2NkE_2c65EbWyzWHCDl2J1/view?usp=sharing'//for hosted view 
 const Home=()=>{
    const navigate = useNavigate();
    console.log(navigate);
