@@ -42,9 +42,10 @@ const Skills = () => {
 
   return (
     <div
+      className="bg-gray-900"
       style={{
         minHeight: "100vh",
-        backgroundColor: "black",
+        // backgroundColor: "black",
         padding: "2rem",
       }}
     >

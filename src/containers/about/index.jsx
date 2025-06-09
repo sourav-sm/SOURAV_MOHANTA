@@ -7,299 +7,118 @@ import pic from "../../pic.png";
 import { SiLeetcode } from "react-icons/si";
 
 
+import Card from "../../compnents/Card";
 
-// const personalDetails = [
-//   {
-//     label: "Name",
-//     value: "Sourav Mohanta",
-//   },
-//   {
-//     label: "Age",
-//     value: "21",
-//   },
-//   {
-//     label: "Address",
-//     value: "India",
-//   },
-//   {
-//     label: "Email",
-//     value: "souravmohanta4428@gmail.com",
-//   },
-//   {
-//     label: "Contact",
-//     value: "9832786676",
-//   }
-// ];
 
-const jobsummary="I'm Sourav, a final-year undergraduate with a keen interest in programming and development. I'm highly passonate for open-source and previously worked as Frontend Developer Intern at Prodloop, also served as an summer-research  Intern at NIT Durgapur, where we developed and maintain a website for a NGO. Driven by a passion for continuous learning and exploring diverse computer science domains, I'm always eager to embrace new opportunities and stay abreast of evolving technologies."
-
+import {FaRegStar } from "react-icons/fa";
+import { FaCodeFork } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { IoCodeSlash } from "react-icons/io5";
+import { IoMdMailUnread } from "react-icons/io";
+import { IoLocation } from "react-icons/io5";
+import { SiFreelancer } from "react-icons/si";
+import { MdFileDownload } from "react-icons/md";
+import { LuCoffee } from "react-icons/lu";
+import { GoPeople } from "react-icons/go";
 
 const About=()=>{
-  
-  const cardStyle = {
-    display: "flex",
-    background: "#1e1935",
-    color: "#fff",
-    padding: "20px",
-    borderRadius: "12px",
-    fontFamily: "Arial, sans-serif",
-  };
-
-  const circleProgressStyle = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    marginRight: "20px",
-  };
-
-  const progressCircleStyle = {
-    position: "relative",
-    width: "150px",
-    height: "150px",
-    borderRadius: "50%",
-    background: "conic-gradient(from 90deg, #2d2d2d 50%, #6c5ce7 50%)", // Adjust progress here
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  };
-
-  const progressNumberStyle = {
-    textAlign: "center",
-  };
-
-  const statsStyle = {
-    display: "flex",
-    flexDirection: "column",
-    flex: 1,
-  };
-
-  const statStyle = {
-    marginBottom: "10px",
-  };
-
-  const labelStyle = {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: "5px",
-    fontSize: "20px",
-  };
-
-  const progressBarBaseStyle = {
-    height: "5px",
-    borderRadius: "2.5px",
-    background: "#2d2d2d",
-  };
-
-  const statInfoStyle = {
-    fontSize: "15px",
-    color: "#b2bec3",
-    display: "flex",
-    justifyContent: "space-between",
-  };
-
-  //leetcode
-  const [stats,SetStats]=useState(null);
-  useEffect(()=>{
-    fetch('https://leetcode-stats-api.herokuapp.com/souravmohanta4428')
-    .then((res)=>res.json())
-    .then((data)=>SetStats(data))
-    .then((err)=>console.log(err));
-  },[])
-
-    return(
-      stats && (
-      <section id="about" className="about">
-         <PageHeaderContetent
-         headerText="About Me"
-         icon={<BsInfoCircleFill size={40}/>}/>
-        <div className="about_content">
-          <div className="about_content_personalWrapper">
-          <Animate
-            play
-            duration={1.5}
-            delay={1}
-            start={{
-              transform:"translateX(-900px)",
-            }}
-            end={{
-              transform:"TranslateX(0px)",
-            }}
-            >
-          <h3>Full Stack Developer</h3>
-          <p>{jobsummary}</p>
-          </Animate>
-          <Animate
-            play
-            duration={1.5}
-            delay={1}
-            start={{
-              transform:"translateX(500px)",
-            }}
-            end={{
-              transform:"TranslateX(0px)",
-            }}
-            >
-          {/* <h3 className="personalInformationHeaderText">Personal Information</h3> */}
-          {/* <ul>
-            {
-              personalDetails.map((item,i)=>(
-                <li key={i}>
-                  <span className="title">{item.label}</span>
-                  <span className="value">{item.value}</span>
-                </li>
-              ))
-            }
-          </ul> */}
-          </Animate>
-          </div>
-          <div style={{
-            width:'40vw',
-            marginLeft:'10px'
-          }}>
-            <div style={{
-              display:'flex',
-              fontSize:'3.5rem',
-              color:'yellow'
-            }}>
-              <SiLeetcode style={{marginTop:'10px',marginRight:'10px'}}/>
-              LeetCode
-            </div>
-           {/* <div className="about_content_serviceWrapper_innerContent">
-            <img src={pic} alt="" />
-           </div> */}
-           <div style={cardStyle}>
-              {/* Circular Progress */}
-              <div style={circleProgressStyle}>
-                <div style={progressCircleStyle}>
-                  <div style={progressNumberStyle}>
-                    <div style={{ fontSize: "2.5rem", fontWeight: "semibold" }}>{stats.totalSolved}</div>
-                    <small style={{ fontSize: "2.5rem", color: "#ccc" }}>{stats.totalQuestions}</small>
+  return(
+    <div className="min-h-screen relative overflow-hidden bg-gray-900">
+      <h1 className="text-6xl  bg-gray-900 font-bold text-yellow-400 flex justify-center items-center">About Me</h1>
+      <div className="grid lg:grid-cols-2  items-start mt-10 px-4">
+        <div className="flex flex-col gap-6 items-center md:items-start mb-8 p-6 bg-gray-900">
+             <div className="mt-5 flex space-x-6">
+               <div className="w-80 h-80 p-1 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 ">
+                  <img src={pic} alt=""  className="w-full h-full rounded-full"/>
+               </div>
+               <div className="space-y-3">
+                  <h1 className="text-white font-bold text-5xl">Sourav</h1>
+                  <h2 className="text-yellow-400 text-3xl font-bold">Software Engineer</h2>
+                  <div className="flex">
+                    <IoLocation size={24} className="text-yellow-400"/>
+                    <h2 className="text-2xl text-gray-300 font-semibold">Pune India</h2>
                   </div>
+                  <h2 className="flex text-2xl text-gray-300 font-semibold">
+                    <IoMdMailUnread size={24} className="text-yellow-400"/>
+                     souravmohanta4428@gmail.com
+                  </h2>
+                  <h2 className="flex text-2xl text-gray-300 font-semibold">
+                    <SiFreelancer size={24} className="text-yellow-400"/>
+                    Available for Freelance
+                  </h2>
+                  <a href="https://drive.google.com/file/d/1YsC9mmL9hz2NkE_2c65EbWyzWHCDl2J1/view" target="_blank" className="flex bg-gray-800 p-2 justify-center items-center rounded-xl text-2xl text-yellow-400 font-semibold">
+                    <MdFileDownload size={24} className="text-yellow-400"/>
+                    <h2>Download Resume</h2>
+                  </a>
+               </div>
+             </div>
+             <div className="bg-gray-800 p-5 rounded-2xl">
+                  <h2 className="text-yellow-400 font-bold text-3xl mb-3">About Me</h2>
+                  <p className="text-gray-300 text-2xl font-semibold">Passionate full-stack developer with 5+ years of experience building web applications. I specialize in React, Next.js, and modern JavaScript frameworks, creating responsive and performant user interfaces.
+                    <br/>
+                     My approach combines technical expertise with creative problem-solving to deliver solutions that exceed client expectations. I'm constantly learning new technologies and contributing to open-source projects.</p>
+             </div>
+             <div className="grid grid-cols-3 gap-6 w-full">
+                <div className="bg-gray-800 p-8 flex flex-col justify-center items-center">
+                  <IoCodeSlash className="text-yellow-400" size={24}/>
+                  <h2 className="text-white text-4xl font-bold mt-2">50+</h2>
+                  <h2 className="text-gray-400 text-2xl font-semibold">Projects</h2>
                 </div>
-              </div>
-        
-             {/* Stats */}
-             <div style={statsStyle}>
-               {/* Easy */}
-               <div style={statStyle}>
-                 <div style={labelStyle}>
-                   Easy
-                   <span style={{ fontSize: "20px", color: "#74b9ff" }}>31.1%</span>
-                 </div>
-                 <div
-                   style={{
-                     ...progressBarBaseStyle,
-                     backgroundColor: "#74b9ff",
-                     width: "31.1%",
-                   }}
-                 ></div>
-                 <div style={statInfoStyle}>
-                   {stats.easySolved}/{stats.totalEasy} <span>Beats: 84%</span>
-                 </div>
-               </div>
-       
-               {/* Medium */}
-               <div style={statStyle}>
-                 <div style={labelStyle}>
-                   Medium
-                   <span style={{ fontSize: "20px", color: "#00cec9" }}>33.9%</span>
-                 </div>
-                 <div
-                   style={{
-                     ...progressBarBaseStyle,
-                     backgroundColor: "#00cec9",
-                     width: "33.9%",
-                   }}
-                 ></div>
-                 <div style={statInfoStyle}>
-                 {stats.mediumSolved}/{stats.totalMedium} <span>Beats: 92%</span>
-                 </div>
-               </div>
-       
-               {/* Hard */}
-               <div style={statStyle}>
-                 <div style={labelStyle}>
-                   Hard
-                   <span style={{ fontSize: "20px", color: "#d63031" }}>23.7%</span>
-                 </div>
-                 <div
-                   style={{
-                     ...progressBarBaseStyle,
-                     backgroundColor: "#d63031",
-                     width: "23.7%",
-                   }}
-                 ></div>
-                 <div style={statInfoStyle}>
-                 {stats.hardSolved}/{stats.totalHard} <span>Beats: 87%</span>
-                 </div>
-               </div>
+                <div className="bg-gray-800 p-8 flex flex-col justify-center items-center">
+                   <LuCoffee className="text-yellow-400" size={24}/>
+                   <h2 className="text-white text-4xl font-bold mt-2">500+</h2>
+                   <h2 className="text-gray-400 text-2xl font-semibold">cups of Tea</h2>
+                </div>
+                <div className="bg-gray-800 p-8 flex flex-col justify-center items-center">
+                  <GoPeople className="text-yellow-400" size={24}/>
+                  <h2 className="text-white text-4xl font-bold mt-2">100+ </h2>
+                   <h2 className="text-gray-400 text-2xl font-semibold">Happy Client</h2>
+                </div>
              </div>
+        </div>
+        <div className="space-y-6">
+          <div className="bg-gray-900 p-6 rounded-2xl">
+           <div className="text-yellow-400 flex justify-between p-4">
+             <div className="text-4xl flex gap-2 font-bold">
+               <FaGithub/>
+               Github Stats
              </div>
-             {/* <div style={{
-                display:'flex',
-                justifyItems:'center',
-                color:'white',
-                fontSize: "18px",
-                background: "#1e1935",
-             }}>
-            <div style={{
-             display:'flex',
-             flexDirection:'column'
-            }}>
-              <h1>Rank</h1>
-             <h3>{stats.ranking}</h3>
-            </div>
-            <div style={{
-             display:'flex',
-             flexDirection:'column'
-            }}>
-              <h1>Contribution Points</h1>
-              <h3>{stats.contributionPoints}</h3>
-            </div>
-            <div>
-               
-            </div>
-             </div> */}
-             <div
-  style={{
-    display: "flex",
-    justifyContent: "center",
-    gap: "50px", // Adds space between Rank and Contribution Points
-    color: "white",
-    fontSize: "20px", // Increased font size
-    fontWeight: "bold", // Makes text bold
-    background: "#1e1935",
-    padding: "20px", // Adds some padding for better spacing
-  }}
->
-  <div
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center", // Centers text inside the div
-    }}
-  >
-    <h1 style={{ fontSize: "22px" }}>Rank</h1>
-    <h3 style={{ fontSize: "20px" }}>{stats.ranking}</h3>
-  </div>
-  <div
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-    }}
-  >
-    <h1 style={{ fontSize: "22px" }}>Contribution Points</h1>
-    <h3 style={{ fontSize: "20px" }}>{stats.contributionPoints}</h3>
-  </div>
-</div>
+             <a href="https://github.com/sourav-sm" target="_blank" className="text-2xl">
+              @sourav-sm
+             </a>
+           </div>
+           <div className="grid grid-cols-2 gap-4 text-yellow-400">
+            <Card
+               icon={<FaRegStar size={24}/>}
+               value={200}
+               label={"stars Earned"}
+            />
+            <Card
+               icon={<FaCodeFork size={24}/>}
+               value={25}
+               label={"Forks"}
+            />
+            <Card
+             icon={<IoCodeSlash size={24}/>}
+             value={1000}
+             label={"Commits"}
+            />
+            <Card
+               icon={<FaGithub size={24}/>}
+               value={150}
+               label={"Repositories"}/>
+           </div>
 
-               </div>
-               </div>
-             </section>
-            )       
-      )       
-    }       
-       
+           {/* commit history */}
+           <div className="bg-gray-800 border-gray-700 mt-5 p-4 rounded-xl">
+            github commit records 
+           </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  )
+}
+
 export default About;
