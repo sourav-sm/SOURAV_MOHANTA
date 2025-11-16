@@ -1,6 +1,12 @@
 export const data = {
     experience : [
         {
+            title: "Software Developer",
+            // subTitle:"Miami,Fl",
+            description:"Tudip Technologies",
+            date:"Sept 2025 -- Present",
+        },
+        {
             title: "Frontend Developer Intern",
             // subTitle:"Miami,Fl",
             description:"Prodloop",
@@ -18,7 +24,7 @@ export const data = {
             title: "B-Tech :",
             subTitle:"National Institude of Technology ,Durgapur",
             description:"Bachelor of Technology in Matellurgical and Materials Engineering",
-            date : "2021--present"
+            date : "2021--2025"
         },
         {
             title: "Higher-Secondary :",
